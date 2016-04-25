@@ -7,7 +7,9 @@ The aim of Ion is to create a style guide that could be used on sites not using 
 As custom polymer tags have to be hyphenated and can't be single words, as such each is named ion-*. How each of these work is detailed below.
 
 ### Note ###
-<code> <ion-note> </ion-note> </code>
+```html
+<ion-note> </ion-note>
+```
 
 The note tag is used to added notes to the other tags. It only takes one attribute, <code>classes</code>, this attribute is only needed if the note needs a class declaration adding the the front of the note text.
 
@@ -16,8 +18,10 @@ The note tag is used to added notes to the other tags. It only takes one attribu
 <ion-note classes=".title">The primary heading used on the site.</ion-note>
 ```
 
-### Colour palette ### 
-<code><ion-colour-palette> </ion-colour-palette></code>
+### Colour Palette
+```html
+<ion-colour-palette> </ion-colour-palette>
+```
 
 The colour palette tag is used to create a block with the colour and the colours data. The tag is has the follow attributes on it:
 
@@ -30,29 +34,33 @@ The colour palette tag is used to create a block with the colour and the colours
 <code>colour-variable</code> - This used to set a variable for the colour, used mostly on customs but it's useful even on smaller site not using a CSS preprocessor.
 
 #### Example ####
-<source>
+```html
 <ion-colour-palette colour-name="Scooter" hex-value="#37bec6" rgb-value="55,190,198" colour-variable="scooter"></ion-colour-palette>
-</source>
+```
 
-'''Note: The colour palette tag can not take the ion note tag.'''
+**Note: The colour palette tag can not take the ion note tag.**
 
 ### Font ###
-<code><ion-font> </ion-font></code>
+```html
+<ion-font> </ion-font>
+```
 
 The font tag is used to create a block that displays the fonts being used on the site (depending on where the style guide is being used this may mean adding the font declaration directly into the style guide's index.html of custom.css file). The font tag only has one attribute, <code>font-family</code>, this takes the font family declaration needed for the font. 
 
 
 #### Example ####
-<source>
+```html
 <ion-font font-family="font-family: 'PT Serif', serif;">
    <ion-note>
       notes about font
    </ion-note>
 </ion-font>
-</source>
+```
 
 ### Button ###
-<code><ion-button> </ion-button></code>
+```html
+<ion-button> </ion-button>
+```
 
 The button tag creates a block with the three button types that can be found on a site, a with the class button, the vanilla button tag and the input type button tag. The tag takes two attributes:
 
@@ -61,14 +69,16 @@ The button tag creates a block with the three button types that can be found on 
 <code>class-name</code> - Used to designate the classes the buttons need to have on them.
 
 #### Example ####
-<source>
+```html
 <ion-button element-title="default button" class-name="button--default">
    <ion-note classes=".button-default">The default button style used on the site.</ion-note>
 </ion-button>
-</source>
+```
 
 ### Input ###
-<code><ion-input> </ion-input></code>
+```html
+<ion-input> </ion-input>
+```
 
 The input tag creates a block with two input tags in it. it will put out two inputs one with a note beside it and one without. The tag takes a few attributes:
 
@@ -83,14 +93,16 @@ The input tag creates a block with two input tags in it. it will put out two inp
 <code>label-text</code> - The text used for the labels
 
 #### Example ####
-<source>
+```html
 <ion-input element-title="default form text field" class-name="default" type="text" place-holder="Placeholder text" label-text="label text">
   <ion-note>The default text field style used on the site.</ion-note>
 </ion-input>
-</source>
+```
 
 ### Text ###
-<code><ion-text> </ion-text></code>
+```html
+<ion-text> </ion-text>
+```
 
 The text tag is used to create a text block to show the different styles of text used on the site. The text part of the element is set to editable so even though to set a default value the text can be edited on the style guide to see test for the style looks with different words. The tag takes two attributes:
 
@@ -101,20 +113,22 @@ The text tag is used to create a text block to show the different styles of text
 In addition to the attributes above to get a text value to display in the block require a vanilla HTML tag to be added with the class text.
 
 #### Example ####
-<source>
+```html
 <ion-text element-title="heading 1" class-name="title">
   <ion-note classes=".title">The primary heading used on the site.</ion-note>
   <h2 class="text">title</h2>
 </ion-text>
-</source>
+```
 
 ### Custom Block ###
-<code><ion-custom-block> </ion-custom-block></code>
+```html
+<ion-custom-block> </ion-custom-block>
+```
 
 The custom block tag is used of any other content which does not currently have a ion tag or is one of a kind set up. The tag takes one attribute,<code>element-title</code>, which is used to give the block a title.
 
 #### Example ####
-<source>
+```html
 <ion-custom-block element-title="default unordered list">
   <ion-note>The default unordered list styles.</ion-note>
     <ul>
@@ -123,5 +137,5 @@ The custom block tag is used of any other content which does not currently have 
       <li>three</li>
     </ul>
 </ion-custom-block>
-</source>
+```
 
