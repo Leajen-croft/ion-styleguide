@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="ion-note.html">
+<dom-module id="ion-custom-block">
+
+  <style>
+  .custom-content {
+    padding-top: 30px;
+  }
+  </style>
+  <template>
+    <h3 class="class-name">{{elementTitle}}</h3>
+    <content select="ion-note"></content>
+    <div class="custom-content">
+      <content></content>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-custom-block",
+    properties: {
+      elementTitle: {
+        type: String,
+        value: 'default'
+      },
+    },
+  });
+</script>

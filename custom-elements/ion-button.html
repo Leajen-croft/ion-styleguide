@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="ion-note.html">
+<dom-module id="ion-button">
+
+  <style>
+  .buttons {
+    padding-top: 30px;
+  }
+  </style>
+  <template>
+      <h3 class="class-name">{{elementTitle}}</h3>
+      <content select="ion-note"></content>
+      <div class="buttons">
+        <button class$="{{className}} button one" type="button" name="button">Button</button>
+        <input class$="{{className}} button two" type="button" name="button" value="input button">
+        <a href="#" class$="{{className}} button three">Link Button</a>
+      </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-button",
+    properties: {
+      elementTitle: {
+        type: String,
+        value: 'default'
+      },
+      className: {
+        type: String,
+        value: 'button-default'
+      },
+    },
+  });
+</script>

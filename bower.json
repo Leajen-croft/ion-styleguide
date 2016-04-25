@@ -1,0 +1,21 @@
+{
+  "name": "poly-style",
+  "homepage": "",
+  "authors": [
+    "Leajen-croft <uiliam90@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.2.3",
+    "google-map": "GoogleWebComponents/google-map#~1.1.7",
+    "susy": "~2.2.9"
+  }
+}

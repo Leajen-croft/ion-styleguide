@@ -1,0 +1,38 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="ion-note.html">
+<dom-module id="ion-text">
+
+  <style>
+  .text-content {
+    margin-top: 30px;
+  }
+  .text-content:focus {
+    outline: none;
+    border-bottom: 1px solid  #69d3ef;
+  }
+  </style>
+  <template>
+    <h3 class="class-name">{{elementTitle}}</h3>
+    <content select="ion-note"></content>
+    <div contentEditable="true" class$="text-content {{className}}" style$="{{sgStyle}}"><content select=".text"></content></div>
+    <content select="code"></content>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-text",
+    properties: {
+      elementTitle: {
+        type: String,
+        value: 'default'
+      },
+      className: {
+        type: String,
+        value: '.default'
+      },
+      sgStyle: {
+        type: String,
+      },
+    },
+  });
+</script>

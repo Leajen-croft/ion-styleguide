@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="ion-note">
+
+  <style>
+  .info span.css {
+    background: #eee;
+    color: #000;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    font-style: normal;
+  }
+  .info {
+    font-style: italic;
+    color: #666666;
+  }
+  </style>
+  <template>
+    <p class="info">
+      <template is="dom-if" if="{{classes}}">
+        <span class="css">{{classes}}</span><span> - </span>
+      </template>
+      <span><content></content></span>
+    </p>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-note",
+    properties: {
+      classes: {
+        type: String
+      },
+    },
+  });
+</script>

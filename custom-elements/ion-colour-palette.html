@@ -1,0 +1,65 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="ion-colour-palette">
+
+  <style>
+  section {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  div {
+    height: 95px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #666666;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  span {
+    color: #666666;
+  }
+  span.uppercase{
+    text-transform: uppercase;
+  }
+  </style>
+  <template>
+    <section>
+      <div style$="background: {{hexValue}}">
+      </div>
+      <p><span class="uppercase">{{colourName}}</span></p>
+      <p>rgb <span class="uppercase">({{rgbValue}})</span></p>
+      <p><span class="uppercase">{{hexValue}}</span></p>
+      <p>${{colourVariable}}</p>
+      <content></content>
+    </section>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-colour-palette",
+    properties: {
+      hexValue: {
+        type: String,
+        value: '#ededed'
+      },
+      colourName: {
+        type: String,
+        value: 'gallery'
+      },
+      colourVariable: {
+        type: String,
+        value: 'gallery'
+      },
+      rgbValue: {
+        type: String,
+        value: '237,237,237'
+      }
+    },
+  });
+</script>

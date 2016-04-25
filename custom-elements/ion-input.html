@@ -1,0 +1,90 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="ion-input">
+
+  <style>
+  input{
+    display: block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-family: inherit;
+  }
+  input:focus {
+    outline: none;
+  }
+  label {
+    display: inline-block;
+  }
+  .form-container {
+    margin-bottom: 15px;
+  }
+  .form-container.one {
+    width: 50%;
+    float: left;
+  }
+  .form-container.two {
+    width: 46%;
+    float: right;
+  }
+  .form-container.two input {
+    width: 100%;
+  }
+  .form-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .form-item input, .form-item p {
+    width: 45%;
+  }
+  .form-note {
+    padding: 0 0 0 20px;
+  }
+  .form-elements {
+    padding-top: 30px;
+  }
+  </style>
+  <template>
+    <h3 class="class-name">{{elementTitle}}</h3>
+    <content select="ion-note"></content>
+    <div class="form-elements">
+      <section class="form-container one">
+        <label for="a">{{labelText}}<span> * </span></label>
+        <div class="form-item">
+          <input id="a" type="{{inputType}}" placeholder="{{placeHolder}}" required/>
+          <p class="form-note">Note about this field</p>
+        </div>
+      </section>
+      <section class="form-container two">
+        <label for="b">{{labelText}}<span> * </span></label>
+        <input id="b" type="{{inputType}}" placeholder="{{placeHolder}}" required/>
+      </section>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-input",
+    properties: {
+      elementTitle: {
+        type: String,
+        value: 'default'
+      },
+      className: {
+        type: String,
+        value: 'default'
+      },
+      inputType: {
+        type: String,
+        value: 'text'
+      },
+      placeHolder: {
+        type: String,
+      },
+      labelText: {
+        type:String,
+      },
+    },
+  });
+</script>

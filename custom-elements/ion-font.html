@@ -1,0 +1,45 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="ion-note.html">
+<dom-module id="ion-font">
+
+  <style>
+  section {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 0 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  h3.font-family {
+    color: #1d1d1d;
+    background: #F3F3F3;
+    line-height: 45px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+  }
+  strong {
+    font-weight: 700;
+  }
+  </style>
+  <template>
+    <section>
+      <h3 class="font-family" style$="{{fontFamily}}">{{fontFamily}}</h3>
+      <content select="ion-note"></content>
+    </section>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "ion-font",
+    properties: {
+      fontFamily: {
+        type: String,
+      },
+    },
+  });
+</script>
