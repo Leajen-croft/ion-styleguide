@@ -5,15 +5,16 @@ The aim of Ion is to create a style guide that could be used on sites not using 
 
 ## Using The Style Guide ##
 As custom polymer tags have to be hyphenated and can't be single words, as such each is named ion-*. How each of these work is detailed below.
+
 ### Note ###
-<code><ion-note> </ion-note></code>
+<code> <ion-note> </ion-note> </code>
 
 The note tag is used to added notes to the other tags. It only takes one attribute, <code>classes</code>, this attribute is only needed if the note needs a class declaration adding the the front of the note text.
 
 #### Example ####
-<source>
+```html
 <ion-note classes=".title">The primary heading used on the site.</ion-note>
-</source>
+```
 
 ### Colour palette ### 
 <code><ion-colour-palette> </ion-colour-palette></code>
