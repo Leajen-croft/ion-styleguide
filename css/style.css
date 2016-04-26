@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,400italic,300|PT+Serif:400,700);
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  color: #1d1d1d; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; }
+
+.section-name {
+  font-family: 'PT Serif', serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px; }
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding: 10px 0; }
+
+h3.class-name {
+  font-size: 1.125rem;
+  /* 18/16 */
+  font-weight: 700; }
+
+p {
+  margin-bottom: 0; }
+
+button {
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px; }
+  header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  header h1 {
+    font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+    font-size: 92px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 100%;
+    background: #1d1d1d;
+    text-align: center;
+    padding: 25px 0; }
+  header h2 {
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: capitalize;
+    width: 100%;
+    background: #cccccc;
+    text-align: center;
+    padding: 25px 0; }
+
+.colours, .elements {
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto; }
+  .colours:after, .elements:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.primary-colours, .secondary-colours {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 35em) {
+    .primary-colours, .secondary-colours {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px; } }
+  .primary-colours h2, .secondary-colours h2 {
+    padding: 0 10px; }
+  .primary-colours ion-colour-palette, .secondary-colours ion-colour-palette {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 49.063em) {
+      .primary-colours ion-colour-palette, .secondary-colours ion-colour-palette {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px; } }
+
+.form, .typography, .patterns {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 35em) {
+    .form, .typography, .patterns {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+code {
+  white-space: pre-wrap;
+  background: #eee;
+  color: #000;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  clear: both;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0 10px; }
+
+link-block p a:hover {
+  text-decoration: underline !important; }
+
+ion-input, ion-button, ion-text, ion-custom-block {
+  display: block;
+  clear: both;
+  margin: 20px 0;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+  padding-top: 10px; }
+
+ion-font {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 49.063em) {
+    ion-font {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px; } }
+  ion-font ion-note {
+    display: inline-block;
+    color: #666666;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 20px; }
+    ion-font ion-note strong {
+      font-weight: 700; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+  padding: 15px; }
+  .logo h2 {
+    display: inline-block;
+    background: none;
+    width: auto;
+    margin-left: 30px; }
