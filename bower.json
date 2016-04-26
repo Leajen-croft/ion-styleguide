@@ -15,7 +15,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#1.2.3",
-    "google-map": "GoogleWebComponents/google-map#~1.1.7",
     "susy": "~2.2.9"
   }
 }
