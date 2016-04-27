@@ -15,6 +15,8 @@
     <link rel="import" href="custom-elements/ion-custom-block.html">
     <link rel="import" href="custom-elements/ion-font.html">
     <link rel="import" href="custom-elements/ion-note.html">
+    <link rel="import" href="custom-elements/ion-markdown.html">
+    <link rel="import" href="bower_components/zero-md/zero-md.html">
   </head>
   <body>
     <header>
@@ -35,6 +37,10 @@
           notes about font
         </ion-note>
       </ion-font>
+    <zero-md file="colours.md">
+      <div class="md-html"></div>
+    </zero-md>
+    <ion-markdown file="colours.md"></ion-markdown>
     </section>
     <section class="colours">
       <h2 class="section-name">2. Colours</h2>
