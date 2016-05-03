@@ -1,5 +1,5 @@
 {
-  "name": "poly-style",
+  "name": "ion-styleguide",
   "homepage": "",
   "authors": [
     "Leajen-croft <uiliam90@gmail.com>"
@@ -16,7 +16,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#1.2.3",
     "susy": "~2.2.9",
-    "zero-md": "zerodevx/zero-md#0.2.0",
-    "iron-ajax": "PolymerElements/iron-ajax#~1.2.0"
+    "iron-ajax": "PolymerElements/iron-ajax#~1.2.0",
+    "marked": "~0.3.5",
+    "mark-down": "~1.0.0"
   }
 }
