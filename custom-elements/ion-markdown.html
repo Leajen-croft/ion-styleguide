@@ -59,9 +59,6 @@
        if (this.$.feed.lastResponse) {
          this._md = this.$.feed.lastResponse.toString();
          this.fire("zero-md-file-loaded");
-       } else {
-         console.warn("[zero-md] AJAX error, fall back to `text`", e);
-         this.file = "";
        }
      },
      _highlight: function (code, lang) {

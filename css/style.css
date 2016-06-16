@@ -5,24 +5,31 @@ body {
   color: #1d1d1d; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; }
-
-.section-name {
-  font-family: 'PT Serif', serif;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0 10px; }
+  font-family: 'Roboto', sans-serif;
+  clear: both; }
 
 h2 {
+  color: #484847;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0; }
+
+h3 {
+  color: #9a9fa3;
   font-size: 32px;
+  line-height: 32px;
   font-weight: 300;
   text-transform: capitalize;
-  padding: 10px 0; }
+  padding: 0;
+  margin: 0 0 20px; }
 
-h3.class-name {
-  font-size: 1.125rem;
-  /* 18/16 */
+h4 {
+  color: #1d1d1d;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 15px;
   font-weight: 700; }
 
 p {
@@ -59,16 +66,17 @@ header {
     text-align: center;
     padding: 25px 0; }
 
-.colours, .elements {
+.block {
   max-width: 1530px;
   margin-left: auto;
-  margin-right: auto; }
-  .colours:after, .elements:after {
+  margin-right: auto;
+  margin-top: 40px; }
+  .block:after {
     content: " ";
     display: block;
     clear: both; }
 
-.primary-colours, .secondary-colours {
+ion-colour-palette {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -76,49 +84,12 @@ header {
   float: left;
   padding-left: 10px;
   padding-right: 10px; }
-  @media (min-width: 35em) {
-    .primary-colours, .secondary-colours {
+  @media (min-width: 49.063em) {
+    ion-colour-palette {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      width: 50%;
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px; } }
-  .primary-colours h2, .secondary-colours h2 {
-    padding: 0 10px; }
-  .primary-colours ion-colour-palette, .secondary-colours ion-colour-palette {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px; }
-    @media (min-width: 49.063em) {
-      .primary-colours ion-colour-palette, .secondary-colours ion-colour-palette {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 50%;
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px; } }
-
-.form, .typography, .patterns {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px; }
-  @media (min-width: 35em) {
-    .form, .typography, .patterns {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 50%;
+      width: 16.66667%;
       float: left;
       padding-left: 10px;
       padding-right: 10px; } }
@@ -129,48 +100,24 @@ code {
   color: #000;
   font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
   clear: both;
-  display: block;
+  display: inline;
   width: 100%;
   box-sizing: border-box;
-  padding: 15px;
   margin: 10px 0 10px; }
 
-link-block p a:hover {
-  text-decoration: underline !important; }
+pre {
+  display: block;
+  clear: both; }
+  pre code {
+    display: inline-block;
+    padding: 15px; }
 
 ion-input, ion-button, ion-text, ion-custom-block {
   display: block;
   clear: both;
   margin: 20px 0;
   overflow: hidden;
-  border-top: 1px solid #cccccc;
   padding-top: 10px; }
-
-ion-font {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px; }
-  @media (min-width: 49.063em) {
-    ion-font {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 50%;
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px; } }
-  ion-font ion-note {
-    display: inline-block;
-    color: #666666;
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 20px; }
-    ion-font ion-note strong {
-      font-weight: 700; }
 
 .logo {
   display: flex;

@@ -3,12 +3,8 @@
 <dom-module id="ion-button">
 
   <style>
-  .buttons {
-    padding-top: 30px;
-  }
   </style>
   <template>
-      <h3 class="class-name">{{elementTitle}}</h3>
       <content select="ion-note"></content>
       <div class="buttons">
         <button class$="{{className}} button one" type="button" name="button">Button</button>
@@ -22,8 +18,7 @@
     is: "ion-button",
     properties: {
       elementTitle: {
-        type: String,
-        value: 'default'
+        type: String
       },
       className: {
         type: String,

@@ -25,89 +25,14 @@
         <h2>Example Style Guide</h2>
       </div>
     </header>
-    <section class="elements">
-      <h2 class="section-name">1. font Families</h2>
-      <ion-font font-family="font-family: 'Roboto', sans-serif;">
-        <ion-note>
-          notes about font
-        </ion-note>
-      </ion-font>
-      <ion-font font-family="font-family: 'PT Serif', serif;">
-        <ion-note>
-          notes about font
-        </ion-note>
-      </ion-font>
-    <zero-md file="colours.md">
-      <div class="md-html"></div>
-    </zero-md>
-    <ion-markdown file="colours.md"></ion-markdown>
-    </section>
-    <section class="colours">
-      <h2 class="section-name">2. Colours</h2>
-      <section class="primary-colours">
-        <h2>Primary Colours</h2>
-        <ion-colour-palette colour-name="Scooter" hex-value="#37bec6" rgb-value="55,190,198" colour-variable="scooter"></ion-colour-palette>
-        <ion-colour-palette colour-name="Pastel" hex-value="#ff6e6e" rgb-value="255,110,110" colour-variable="pastel"></ion-colour-palette>
-      </section>
-      <section class="secondary-colours">
-        <h2>Secondary Colours</h2>
-        <ion-colour-palette colour-name="Flash" hex-value="#f3f3f3" rgb-value="243,243,243" colour-variable="flash"></ion-colour-palette>
-        <ion-colour-palette colour-name="Black" hex-value="#000000" rgb-value="0,0,0" colour-variable="black"></ion-colour-palette>
-      </section>
-    </section>
-    <section class="elements">
-      <h2 class="section-name">3. elements</h2>
-      <section class="form">
-        <h2>Form</h2>
-          <ion-button element-title="default button" class-name="button--default">
-            <ion-note classes=".button-default">The default button style used on the site.</ion-note>
-          </ion-button>
-          <ion-input element-title="default form text field" class-name="default" type="text" place-holder="Placeholder text" label-text="label text">
-            <ion-note>The default text field style used on the site.</ion-note>
-          </ion-input>
-      </section>
-      <section class="typography">
-        <h2>Headings</h2>
-        <ion-text element-title="heading 1" class-name="title">
-          <ion-note classes=".title">The primary heading used on the site.</ion-note>
-          <span class="note">The primary heading used on the site.</span>
-          <h2 class="text">title</h2>
-        </ion-text>
-        <ion-text element-title="heading 2" class-name="title title--small">
-          <ion-note classes=".title.title--small">The secondary heading used on the site.</ion-note>
-          <h3 class="text">title</h3>
-        </ion-text>
-        <ion-text element-title="main body" class-name="body--copy">
-          <ion-note classes=".body--copy">The main body used on the site.</ion-note>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-        </ion-text>
-        <ion-text element-title="alt body" class-name="alt">
-          <ion-note classes=".alt">The alternate body used on the site.</ion-note>
-          <p class="text">Lorem ipsum dolor sit amet</p>
-        </ion-text>
-        <h2>Links</h2>
-        <ion-custom-block element-title="Inline links">
-          <ion-note>Inline link style.</ion-note>
-          <p>Lorem ipsum dolor sit amet <a href="#">Link Text</a></p>
-        </ion-custom-block>
-        <h2>Lists</h2>
-        <ion-custom-block element-title="default unordered list">
-          <ion-note>The default unordered list styles.</ion-note>
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
-        </ion-custom-block>
-        <ion-custom-block element-title="default ordered list">
-          <ion-note>The default ordered list styles.</ion-note>
-          <ol>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ol>
-        </ion-custom-block>
-      </section>
-    </section>
+    <div class="block">
+      <ion-markdown file="partials/colours.md"></ion-markdown>
+    </div>
+    <div class="block">
+      <ion-markdown file="partials/elements.md"></ion-markdown>
+    </div>
+    <div class="block">
+      <ion-markdown file="partials/typography.md"></ion-markdown>
+    </div>
   </body>
 </html>

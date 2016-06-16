@@ -12,28 +12,34 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   color: #1d1d1d;
-  background: #F9F9F9;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
-}
-.section-name {
-  font-family: 'PT Serif', serif;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0 10px;
+  clear: both;
 }
 h2 {
+  color: #484847;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+h3 {
+  color: #9a9fa3;
   font-size: 32px;
+  line-height: 32px;
   font-weight: 300;
   text-transform: capitalize;
-  padding: 10px 0;
+  padding: 0;
+  margin: 0 0 20px;
 }
-h3.class-name {
-  font-size: 1.125rem; /* 18/16 */
+h4 {
+  color: #1d1d1d;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 15px;
   font-weight: 700;
-
 }
 p {
   margin-bottom: 0;
@@ -65,28 +71,14 @@ header {
     padding: 25px 0;
   }
 }
-.colours, .elements {
+.block {
   @include container(1530px);
+  margin-top: 40px;
 }
-.primary-colours, .secondary-colours {
+ion-colour-palette {
   @include span(1 of 1);
-  @include susy-breakpoint(35em) {
-    @include span(1 of 2);
-  }
-  h2 {
-    padding: 0 10px;
-  }
-  ion-colour-palette {
-    @include span(1 of 1);
-    @include susy-breakpoint(49.063em) {
-      @include span(1 of 2);
-    }
-  }
-}
-.form, .typography, .patterns {
-  @include span(1 of 1);
-  @include susy-breakpoint(35em) {
-    @include span(1 of 2);
+  @include susy-breakpoint(49.063em) {
+    @include span(1 of 6);
   }
 }
 
@@ -96,39 +88,26 @@ code {
   color: #000;
   font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
   clear: both;
-  display: block;
+  display: inline;
   width: 100%;
   box-sizing: border-box;
-  padding: 15px;
   margin: 10px 0 10px;
 }
-
-link-block p a:hover{
-  text-decoration: underline !important;
+pre {
+  display: block;
+  clear: both;
+  code {
+    display: inline-block;
+    padding: 15px;
+  }
 }
+
 ion-input, ion-button, ion-text, ion-custom-block {
   display: block;
   clear: both;
   margin: 20px 0;
   overflow: hidden;
-  border-top: 1px solid #cccccc;
   padding-top: 10px;
-}
-ion-font {
-  @include span(1 of 1);
-  @include susy-breakpoint(49.063em) {
-    @include span(1 of 2);
-  }
-  ion-note {
-    display: inline-block;
-    color: #666666;
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 20px;
-    strong {
-      font-weight: 700;
-    }
-  }
 }
 .logo {
   display: flex;
