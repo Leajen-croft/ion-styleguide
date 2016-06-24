@@ -139,7 +139,7 @@ The custom block tag is used of any other content which does not currently have 
 </ion-custom-block>
 ```
 
-### Makrdown block ###
+### Markdown block ###
 ```html
 <ion-markdown> </ion-markdown>
 ```
