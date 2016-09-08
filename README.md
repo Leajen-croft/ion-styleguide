@@ -139,3 +139,16 @@ The custom block tag is used of any other content which does not currently have 
 </ion-custom-block>
 ```
 
+### Markdown block ###
+```html
+<ion-markdown> </ion-markdown>
+```
+
+The markdown tag is used to link to and render a markdown document, this make it easier to create and comment custom styled elements. The latest version of the ion style guide template actually uses this more then any other tag due to the easier control it offers.
+
+#### Example ####
+```html
+<ion-markdown file="partials/colours.md"></ion-markdown>
+```
+
+
